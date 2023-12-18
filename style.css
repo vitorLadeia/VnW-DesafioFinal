@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ------ INICIO HEADER ------ */
+
+header {
+    height: 94px;    
+}
+
+.topo {
+    display: flex;
+    height: 94px;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+.marca {
+    height: 30px;
+    padding-left: 70px;
+    top: 32px;
+}
+
+.icones {
+    display: flex;
+    margin-right: 29px;    
+}
+
+.iconeTopo {
+    padding: 5px;
+    width: auto;
+    height: 40px;
+}
+
+/* ------ FIM HEADER ------ */
+
+/* ------ INICIO MAIN ------ */
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 375px;
+}
+
+.texto1 {
+    display: flex;
+    height: 70px;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px gray;
+}
+
+.fileira {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+figure {
+    background-color: #5CA720;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+.cardproduto {
+    width: 15vw;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cardproduto:hover {
+    opacity: 0.4;    
+    transition: .8s;
+}
+
+figcaption {
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+}
+
+h2 {
+    font-weight: 500;
+    margin: 5px 0 8px 0;
+}
+
+span {
+    color: #5CA720;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+button {
+    background-color: #5CA720;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    font-weight: 500; 
+    margin-bottom: 45px; 
+    margin-top: 10px; 
+    padding: 5px; 
+}
+
+button:hover {
+    background-color: #512200BD;
+    color: white;
+}
+
+/* ------ FIM MAIN ------ */
+
+/* ------ INICIO FOOTER ------ */
+
+footer {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px gray;
+}
+
+.bloco1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 600;
+    border-bottom: solid 1px gray;
+    padding: auto;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.second {
+    width: 550px;
+}
+
+.paragrafo {
+    font-weight: 600;
+}
+
+input {
+    width: 390px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+}
+
+input:hover{
+    color: #5CA720;
+}
+
+.inscrever {
+    height: 50px;
+    text-align: center;
+    border-radius: 0 5px 5px 0; 
+    position: relative;   
+    right: 0.3vw;
+    top: 0.4vh;
+}
+
+a {
+    color: #161616;
+    text-decoration: none;
+}
+
+.bloco2 {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.midias {
+    padding: 5px;
+    width: auto;
+    height: 40px;
+}
+
+.cartao {
+    padding: 5px;
+    width: auto;
+    height: 40px;
+}
+
+/* ------ FIM FOOTER ------ */
+
+/* ------ INICIO RESPONSIVO ------ */
+
+
+@media (max-width: 1000px) {
+  ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 8px;
+  }
+
+  .second {
+    left: 25px;
+  }
+
+  .paragrafo {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  footer {
+    border-bottom: solid 1px gray;
+    border-top: solid 1px gray;
+  }
+
+  .bloco1 {
+    flex-direction: column;
+    margin-left: 30px;
+    width: 300px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .second {
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  .paragrafo {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  input {
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+  }
+
+  .inscrever {
+    width: 100%;
+    height: 43px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .midias {
+    height: 30px;
+  }
+
+  .cartao {
+    height: 30px;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .fileira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardproduto {
+    width: 100%;
+    height: 100%;
+  }
+  
+  figure {
+    width: 30vw;
+    height: 30vh;
+  }
+}
